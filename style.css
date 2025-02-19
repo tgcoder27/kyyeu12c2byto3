@@ -31,6 +31,14 @@ header {
 .logo {
     font-size: 24px;
     font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+.small-logo {
+    display: block;
+    margin: 5px auto 0; /* Căn giữa logo */
+    width: 50px;  /* Điều chỉnh kích thước */
+    height: auto;
 }
 nav ul {
     list-style: none;
@@ -106,7 +114,6 @@ button.prev:hover, button.next:hover {
 }
 section {
     height: 100vh;
-    padding: 100px;
     text-align: center;
     font-size: 30px;
     color: white;
