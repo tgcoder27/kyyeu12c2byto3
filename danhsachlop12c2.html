@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Lớp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            gap: 10px;
+            width: 80vw;
+        }
+        .member {
+            position: relative;
+            width: 100%;
+            padding-top: 133.33%; /* 4:3 Ratio */
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .member img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 215, 0, 0.8);
+            color: black;
+            text-align: center;
+            padding: 10px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .member:hover .info {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <h1>THÀNH VIÊN LỚP 12C2</h1>
+    <div class="grid">
+        <!-- Lặp lại 44 thành viên -->
+        <script>
+            const members = [
+                { name: "Nguyễn Văn A", dob: "01/01/2006", note: "Học giỏi, vui tính" },
+                { name: "Trần Thị B", dob: "15/02/2006", note: "Hoạt bát, năng động" },
+                /* Thêm các thành viên khác */
+            ];
+            for (let i = 0; i < 44; i++) {
+                document.write(`
+                    <div class="member">
+                        <img src="https://via.placeholder.com/150" alt="Thành viên">
+                        <div class="info">
+                            <div><strong>${members[i % members.length].name}</strong> - ${members[i % members.length].dob}</div>
+                            <div>${members[i % members.length].note}</div>
+                        </div>
+                    </div>
+                `);
+            }
+        </script>
+    </div>
+</body>
+</html>

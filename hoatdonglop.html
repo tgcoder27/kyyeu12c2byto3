@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoạt động của lớp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            margin: 20px 0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            max-width: 80%;
+            margin: auto;
+        }
+        .activity {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .activity img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+        .info {
+            position: absolute;
+            bottom: -50%;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 223, 77, 0.9);
+            color: black;
+            text-align: center;
+            padding: 10px;
+            transition: bottom 0.3s;
+            font-weight: bold;
+        }
+        .activity:hover .info {
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hoạt động của lớp</h1>
+    <div class="gallery">
+        <div class="activity">
+            <img src="activity1.jpg" alt="Hoạt động 1">
+            <div class="info">Sự kiện thể thao<br>10/02/2025</div>
+        </div>
+        <div class="activity">
+            <img src="activity2.jpg" alt="Hoạt động 2">
+            <div class="info">Chuyến dã ngoại<br>15/03/2025</div>
+        </div>
+        <div class="activity">
+            <img src="activity3.jpg" alt="Hoạt động 3">
+            <div class="info">Hội trại truyền thống<br>20/04/2025</div>
+        </div>
+        <div class="activity">
+            <img src="activity4.jpg" alt="Hoạt động 4">
+            <div class="info">Lễ tốt nghiệp<br>30/06/2025</div>
+        </div>
+    </div>
+</body>
+</html>
