@@ -16,4 +16,5 @@ function prevSlide() {
     showSlide(currentSlide);
 }
 
+// Tự động chuyển ảnh sau 3 giây
 setInterval(nextSlide, 3000);
