@@ -29,20 +29,41 @@ nav ul li a {
     color: white;
 }
 
+/* Khung slideshow tỉ lệ 16:9 */
 .slideshow {
     position: relative;
-    max-width: 100%;
-    height: 400px;
-    overflow: hidden;
-}
-.slider img {
     width: 100%;
-    height: 400px;
-    display: none;
+    max-width: 1200px;
+    aspect-ratio: 16 / 9; /* Đảm bảo tỉ lệ khung hình */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background: black;
 }
-.slider img.active {
-    display: block;
+
+/* Slider chứa các slide */
+.slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
+
+/* Slide hiển thị ảnh với background cover */
+.slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Hiển thị ảnh đang active */
+.slide.active {
+    opacity: 1;
 
 button.prev, button.next {
     position: absolute;
