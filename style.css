@@ -19,6 +19,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
+    gap: 10px; /* Khoảng cách giữa logo và chữ */
 }
 .header-container {
     max-width: 1200px;  /* Giữ nguyên kích thước trung tâm */
@@ -33,12 +34,21 @@ header {
     font-weight: bold;
     text-align: center;
     position: relative;
+    width: 50px; /* Điều chỉnh kích thước logo */
+    height: 50px;
+    object-fit: cover; /* Giữ tỉ lệ ảnh */
 }
 .small-logo {
     display: block;
     margin: 5px auto 0; /* Căn giữa logo */
     width: 50px;  /* Điều chỉnh kích thước */
     height: auto;
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
 }
 nav ul {
     list-style: none;
@@ -123,6 +133,13 @@ section {
 #price { background: #666; }
 #consult { background: #777; }
 #contact { background: #888; }
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Khoảng cách giữa các mục */
+    flex-wrap: wrap; /* Nếu không đủ chỗ, mục sẽ xuống hàng */
+}
 .section {
     margin: 30px auto;
     width: 300px;
@@ -132,6 +149,8 @@ h2 {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 10px;
+    width: 300px;
+    text-align: center;
 }
 
 .image-container {
