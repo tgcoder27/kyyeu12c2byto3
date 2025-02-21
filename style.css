@@ -44,12 +44,8 @@ header {
     width: 50%;  /* Điều chỉnh kích thước */
     height: auto;
 
-.title {
-    font-size: 24%;
-    font-weight: bold;
-    color: white;
 }
-}
+    
 nav ul {
     list-style: none;
     display: flex;
