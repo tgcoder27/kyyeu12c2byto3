@@ -40,8 +40,8 @@ header {
 }
 .small-logo {
     display: block;
-    margin: 5% auto 0; /* Căn giữa logo */
-    width: 50%;  /* Điều chỉnh kích thước */
+    margin: 5px auto 0; /* Căn giữa logo */
+    width: 50px;  /* Điều chỉnh kích thước */
     height: auto;
 
 }
@@ -130,12 +130,6 @@ section {
 #consult { background: #777; }
 #contact { background: #888; }
 
-.container {
-    display: flex;
-    justify-content: center;
-    gap: 20%; /* Khoảng cách giữa các mục */
-    flex-wrap: wrap; /* Nếu không đủ chỗ, mục sẽ xuống hàng */
-}
 .section {
     margin: 30% auto;
     width: 300%;
