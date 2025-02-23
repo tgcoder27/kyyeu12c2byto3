@@ -87,6 +87,7 @@ nav ul li a {
     border-radius: 10px;
     background: black;
     display: block;
+    margin-bottom: 30px
 }
 
 /* Slider chứa các slide */
