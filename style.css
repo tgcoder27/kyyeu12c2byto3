@@ -7,13 +7,13 @@ body {
 }
 header {
     background: black;
-    padding: 15px;
+    padding: 15vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .logo {
-    font-size: 24px;
+    font-size: 24vh;
     font-weight: bold;
 }
 nav ul {
@@ -22,7 +22,7 @@ nav ul {
     padding: 0;
 }
 nav ul li {
-    margin: 0 15px;
+    margin: 0 15vh;
 }
 nav ul li a {
     text-decoration: none;
@@ -33,11 +33,11 @@ nav ul li a {
 .slideshow {
     position: relative;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1200vh;
     aspect-ratio: 16 / 9; /* Đảm bảo tỉ lệ khung hình */
     margin: auto;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 10vh;
     background: black;
 }
 
@@ -72,52 +72,84 @@ button.prev, button.next {
     background: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 10px;
+    padding: 10vh;
     cursor: pointer;
 }
-button.prev { left: 10px; }
-button.next { right: 10px; }
+button.prev { left: 10vh; }
+button.next { right: 10vh; }
 
-.services {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px;
-}
-.service-box {
-    background: #333;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-}
-.service-box h3 {
-    color: #FFD700;
-}
-.service-box button {
-    background: #FFD700;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
+        body {
+            background-color: #222;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            display: flex;
+            gap: 1.25rem;
+        }
+        .card {
+            background-color: #333;
+            border-radius: 0.625rem;
+            overflow: hidden;
+            width: 15.625rem;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 9.375rem;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 0.9375rem;
+        }
+        .card h3 {
+            margin: 0.625rem 0;
+        }
+        .card p {
+            font-size: 0.875rem;
+            color: #ddd;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 0.625rem;
+            padding: 0.5rem 0.75rem;
+            background-color: #ffcc00;
+            color: black;
+            text-decoration: none;
+            border-radius: 0.3125rem;
+            font-weight: bold;
+        }
+        .card:nth-child(1) .card-content { background-color: #6cae75; }
+        .card:nth-child(2) .card-content { background-color: #d96c6c; }
+        .card:nth-child(3) .card-content { background-color: #e0b354; }
+        .card:nth-child(4) .card-content { background-color: #6cb6c9; }
+    
 .album {
     text-align: center;
-    padding: 40px;
+    padding: 40vh;
 }
 .gallery {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 20vh;
 }
 .gallery img {
-    width: 200px;
-    height: 150px;
-    border-radius: 10px;
+    width: 200vh;
+    height: 150vh;
+    border-radius: 10vh;
 }
 
 footer {
     background: black;
     text-align: center;
-    padding: 20px;
+    padding: 20vh;
 }
 
