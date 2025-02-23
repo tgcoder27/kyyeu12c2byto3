@@ -10,7 +10,7 @@ body {
     gap: 20px;
     justify-content: center;
     align-items: center
-    min-height: 1px;
+    padding: 10px;
 }
 .card {
     background-color: #333;
@@ -86,6 +86,7 @@ nav ul li a {
     overflow: hidden;
     border-radius: 10px;
     background: black;
+    display: block;
 }
 
 /* Slider chứa các slide */
@@ -93,6 +94,7 @@ nav ul li a {
     width: 100%;
     height: 100%;
     position: relative;
+    display: block;
 }
 
 /* Slide hiển thị ảnh với background cover */
@@ -132,11 +134,13 @@ button.next { right: 10px; }
     display: flex;
     justify-content: center;
     align-items: center;
+    display: block;
 }
 .gallery {
     display: flex;
     justify-content: center;
     gap: 20px;
+    display: flex;
     
 }
 .gallery img {
@@ -145,6 +149,7 @@ button.next { right: 10px; }
     border-radius: 10px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    aspect-ratio: 16 / 9;
 }
 
 footer {
