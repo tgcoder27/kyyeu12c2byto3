@@ -10,7 +10,7 @@ body {
     gap: 20px;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: auto;
 }
 .card {
     background-color: #333;
